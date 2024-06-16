@@ -1,6 +1,8 @@
 const btns = document.querySelectorAll(".nav-btn");
 const slides = document.querySelectorAll(".video-slide");
 const contentToShow = document.querySelectorAll(".content");
+let intervalSlider;
+let count = 0;
 
 function handleBtn(manual) {
     contentToShow.forEach(i => {
@@ -20,7 +22,7 @@ function handleBtn(manual) {
             i.classList.remove("active");
         }
     });
-
+    
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
     contentToShow[manual].classList.add("active");
@@ -28,6 +30,21 @@ function handleBtn(manual) {
 
 btns.forEach((button, i) => {
     button.addEventListener("click", () => {
-        handleBtn(i)
+        clearInterval(intervalSlider);
+        handleBtn(i);
+        count = i;
+        startAutoSlider();
     })
 });
+
+function startAutoSlider() {
+    intervalSlider = setInterval(() => {
+        count++;
+        if (count >= btns.length) {
+            count = 0;
+        }
+        handleBtn(count);
+    }, 8000);
+}
+
+startAutoSlider();
