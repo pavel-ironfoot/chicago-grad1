@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 360px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.welcome {
+    color: #fff;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color: #6A859C;
+    line-height: 1.8;
+    /* it's mean font-size * 1.8 */
+}
+
+.hide {
+    display: none !important;
+}
+
+.common-section__dark {
+    background-color: #0c262e;
+}
+
+.common-section__dark * {
+    color: #FFFFFF;
+}
+
+.common-section__dark .title-wrapper__header {
+    color: #E8E8E8;
+}
+
+.header {
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 4px;
+    /* text-transform: uppercase; */
+    color: #69B9FF;
+}
+
+.header__nav ul {
+    display: flex;
+}
+
+.header__nav li+li {
+    /* it means that we choose only that li that have li near on left side*/
+    margin-left: 40px;
+}
+
+.header__nav a {
+    font-size: 16px;
+    line-height: 20px;
+    transition: color 0.2s;
+}
+
+.header__nav a:hover {
+    color: #0082F3;
+}
+
+.header__nav a:active {
+    color: #0062b6;
+}
+
+
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #244a6b;
+    background-image: url('img2/wellcome-main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__heading {
+    margin-bottom: 100px;
+    font-size: 59px;
+    line-height: 60px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: -2px -2px 2px #00115f,
+        2px -2px 2px #00115f,
+        -2px 2px 2px #00115f,
+        2px 2px 2px #00115f;
+    ;
+}
+
+.welcome__links>*+* {
+    /*any element which lie in wellcome links and it have a neighbour*/
+    margin-left: 20px;
+}
+
+.link-primary {
+    padding: 11px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #69B9FF;
+    border-radius: 4px;
+    border: 1px solid #69B9FF;
+    transition: background-color 0.2s;
+}
+
+.link-primary:hover {
+    box-sizing: border-box;
+    background-color: #3d6080b0;
+    border: 1px solid rgba(164, 236, 224, 0.979);
+}
+
+.link-primary:active {
+    background-color: #0f8fff;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+
+    background-color: #3d6080b0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.link:hover {
+    background-color: #69B9FF;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* --------------- about -------------- */
+
+.about {
+    text-align: center;
+}
+
+.common-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title-wrapper__header {
+    margin-bottom: 17px;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #676778;
+}
+
+.title-wrapper__p {
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8E8E9C;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about .cards-wrapper-card {
+    padding: 35px 15px 20px;
+    width: 300px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+}
+
+.about .cards-wrapper-card img {
+    margin-bottom: 20px;
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+    /*that picture fully gat inside block, if height or width less so it will be a free space*/
+}
+
+.about .cards-wrapper-card h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #676770
+}
+
+.services .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .cards-wrapper-card {
+    width: 45%;
+}
+
+.services .cards-wrapper-card img {
+    margin-bottom: 20px;
+}
+
+.services .cards-wrapper-card h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.services .link {
+    margin-top: 15px;
+}
+
+/* --------------------Tabs Sections --------------------*/
+
+.tabs__nav {
+    margin-bottom: 50px;
+}
+
+.tabs__nav button {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #92A8AD;
+    border-radius: 4px;
+}
+
+.tabs__nav button.active {
+    background-color: #2E80B6;
+}
+
+.tabs__nav button+button {
+    /*all buttons which have a neighbours on the left*/
+    margin-left: 15px;
+}
+
+.tabs__item {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.tabs__item img {
+    margin-bottom: 15px;
+}
+
+.tabs__item h4 {
+    margin-bottom: 15px;
+    font-size: 31px;
+    line-height: 36px;
+    color: #676770;
+}
+
+.tabs__desk {
+    max-width: 728px;
+    margin: 0 auto;
+}
+
+/*------------------FOOTER----------------*/
+
+
+.footer__desc h4 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #676770;
+}
+
+.footer__desc-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-bottom: 40px;
+}
+
+.footer__desc-container>* {
+    width: 30%;
+    min-width: 220px;
+}
+
+.footer__desc a {
+    font-size: 13px;
+    line-height: 20px;
+    color: #668CAD;
+}
+
+.footer__desc li {
+    height: 30px;
+    position: relative;
+}
+
+.footer__desc li::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    background-color: #D5D5E0;
+}
+
+.footer__social li::before {
+    width: calc(100% - 34px);
+}
+
+.footer__desc li+li {
+    /*all li until first(that have something on left) */
+    margin-top: 6px;
+}
+
+.footer__social img {
+    margin-right: 10px;
+}
+
+.footer__social img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer__copy {
+    padding: 40px 0;
+    background-color: #0c262e;
+    text-align: center;
+}
+
+.footer__copy p {
+    color: #9E9E9E;
+}
+
+@media (max-width: 1080px) {
+    .header {
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 829px) {
+    .footer__desc-container {
+        justify-content: space-evenly;
+    }
+
+    .footer__desc h4 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:680px) {
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .services .cards-wrapper-card {
+        width: 80%;
+    }
+
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:660px) {
+    .tabs__nav {
+        margin-bottom: 30px;
+    }
+
+    .tabs__nav button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+
+    .tabs__nav button+button {
+        margin-top: 10px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__nav li+li {
+        margin-left: 15px;
+    }
+
+    .welcome__heading {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .welcome__links a {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome__links>*+* {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .about .cards-wrapper-card h4 {
+        font-size: 16px;
+    }
+
+    .services .cards-wrapper-card h4 {
+        font-size: 16px;
+    }
+
+    .services .cards-wrapper-card .link {
+        font-size: 14px;
+    }
+
+    .tabs__item h4 {
+        font-size: 24px;
+    }
+}
