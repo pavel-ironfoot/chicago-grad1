@@ -9,7 +9,7 @@ body {
     animation: fadeIn 2s forwards;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
     to {
         opacity: 1;
     }
@@ -82,7 +82,8 @@ section {
     flex-direction: column;
     background: #103552;
 }
-.home::before{
+
+.home::before {
     z-index: 777;
     content: "";
     position: absolute;
@@ -92,6 +93,7 @@ section {
     top: 0;
     left: 0;
 }
+
 .home .content {
     z-index: 888;
     color: #fff;
@@ -99,6 +101,7 @@ section {
     margin-top: 50px;
     display: none;
 }
+
 .home .content.active {
     display: block;
 }
@@ -123,17 +126,20 @@ section {
     margin-bottom: 40px;
 }
 
-.home .content .content_second-text{
- animation: appear-p 2s;
+.home .content .content_second-text {
+    animation: appear-p 2s;
 }
 
-@keyframes appear-p{
-    from{
+@keyframes appear-p {
+    from {
         opacity: 0.3;
-    }to{
+    }
+
+    to {
         opacity: 1;
     }
 }
+
 /* .home .content a {
     background: #fff;
     padding: 15px 35px;
@@ -187,7 +193,7 @@ section {
     margin-bottom: 12px;
 }
 
-.slider-navigation .nav-btn{
+.slider-navigation .nav-btn {
     width: 12px;
     height: 12px;
     background: #fff;
@@ -197,26 +203,26 @@ section {
     transition: 0.3 ease;
 }
 
-.slider-navigation .nav-btn.active{
+.slider-navigation .nav-btn.active {
     background: #2696E9;
 }
 
-.slider-navigation .nav-btn:not(:last-child){
+.slider-navigation .nav-btn:not(:last-child) {
     margin-right: 20px;
 }
 
-.slider-navigation .nav-btn:hover{
+.slider-navigation .nav-btn:hover {
     transform: scale(1.2);
 }
 
-.video-slide{
+.video-slide {
     position: absolute;
     width: 100%;
     /* display: none; */
     clip-path: circle(0% at 0 50%);
 }
 
-.video-slide.active{
+.video-slide.active {
     clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
@@ -240,6 +246,7 @@ section {
     header .navigation {
         display: none;
     }
+
     header .navigation.active {
         position: fixed;
         width: 100%;
@@ -251,13 +258,14 @@ section {
         align-items: center;
         background: rgba(1, 1, 1, 0.5);
     }
+
     header .navigation .navigation__items a {
         color: #222;
         font-size: 1.2em;
         margin: 20px;
     }
 
-    header .navigation.active .navigation__items{
+    header .navigation.active .navigation__items {
         background: #ffffffe3;
         width: 600px;
         max-width: 600px;
@@ -269,10 +277,12 @@ section {
         border-radius: 5px;
         box-shadow: 0 5px 25px rgb(1 1 1/20%);
     }
+
     header .navigation .navigation__items a:before {
         background: #616161;
         height: 5px;
     }
+
     .menu-btn {
         background: url(./img/menu.png) no-repeat;
         background-size: 30px;
@@ -339,18 +349,11 @@ section {
     margin-top: 50px;
     display: none;
 }
+
 .home .contacts.active {
     display: block;
 }
 
-.home .contacts h3 {
-    font-size: 2em;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 40px;
-}
 .home .contacts p {
     font-size: 1.8em;
     font-weight: 400;
@@ -358,17 +361,20 @@ section {
     line-height: 55px;
     margin-bottom: 20px;
 }
+
 .home .contacts p a {
     font-size: 1.4em;
     font-weight: 300;
     letter-spacing: 5px;
     line-height: 55px;
 }
+
 .home .contacts p span {
     font-size: 1.0em;
     text-transform: lowercase;
     letter-spacing: 1px;
 }
+
 .home .contacts a {
     color: #fff;
     font-size: 1.6em;
@@ -380,10 +386,12 @@ section {
 .home .contacts a:hover {
     transform: scale(1.5);
 }
-.contacts__icons{
+
+.contacts__icons {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
+
 .home .about {
     z-index: 888;
     color: #fff;
@@ -391,11 +399,22 @@ section {
     margin-top: 50px;
     display: none;
 }
+
 .home .about.active {
     display: block;
 }
+
 .home .about p {
     font-size: 1.4em;
     font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.home__contacts-about__h3 {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
     margin-bottom: 40px;
 }
