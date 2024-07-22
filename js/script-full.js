@@ -37,7 +37,6 @@ anchors.forEach(anc => {
 ////////////////////////////////
 
 const learnMore = document.querySelector('a[href="#learn"]');
-console.log(learnMore);
 learnMore.addEventListener("click", (e) => {
     e.preventDefault();
     const elem = document.querySelector("#learn");

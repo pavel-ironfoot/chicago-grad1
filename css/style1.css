@@ -107,7 +107,7 @@ p {
     text-align: center;
 
     background-color: #244a6b;
-    background-image: url('img2/wellcome-main.jpg');
+    background-image: url('../img2/wellcome-main.jpg');
     background-size: cover;
     background-position: center;
 }
