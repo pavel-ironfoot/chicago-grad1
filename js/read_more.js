@@ -10,7 +10,6 @@ function hideParagraph(index){
 
 readMore.forEach((elem,index)=>{
     elem.addEventListener('click',()=>{
-        hideParagraph(index)
-        console.log(index)
+        hideParagraph(index);
     })
 });
