@@ -100,6 +100,7 @@ section {
     width: 70%;
     margin-top: 50px;
     display: none;
+    min-width: 250px;
 }
 
 .home .content.active {
@@ -284,7 +285,7 @@ section {
     }
 
     .menu-btn {
-        background: url(./img/menu.png) no-repeat;
+        background: url(../img/menu.png) no-repeat;
         background-size: 30px;
         background-position: center;
         width: 40px;
@@ -295,7 +296,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(./img/close.png) no-repeat;
+        background: url(../img/close.png) no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
@@ -417,4 +418,30 @@ section {
     letter-spacing: 5px;
     line-height: 75px;
     margin-bottom: 40px;
+}
+
+
+@media (max-width: 767px){
+    .home .media-icons{
+        display: none;
+    }
+
+    .home .content{
+        position: absolute;
+        top: 70px;
+        left: 10%;
+    }
+
+    .slider-navigation{
+        display: none;
+    }
+
+    .home .content h1{
+        font-size: 2em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
 }
